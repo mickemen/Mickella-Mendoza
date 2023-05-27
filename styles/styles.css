@@ -1,0 +1,303 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.main-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.maincontainer {
+    max-width: 1200px;
+    width: 90%;
+    height: inherit;
+}
+
+/*Estilos header*/
+header{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(55, 58, 59);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 2000; /*Hace que las cosas queden encima*/
+}
+
+header .maincontainer nav{
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .maincontainer nav ul{
+    list-style: none;
+    display: inline;
+}
+
+header .maincontainer nav ul li{
+    display: inline;
+}
+
+header .maincontainer nav ul li a{
+    color: #fff;
+    padding: 19px;
+}
+
+header .maincontainer nav ul li a:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.logo-container{
+    position: absolute;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    padding: 0 19px;
+}
+
+.logo-container a{
+    color:#fff ;
+    font-size: 20px;
+}
+/*Termina estilos header*/
+
+/*Estilos inicio*/
+section#inicio{
+    width: 100%;
+    height: 450px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#inicio .img-cover{
+    width: 100%;
+    height: inherit;
+    background-image: url("../assets/images/portada.jpg");
+    background-size: cover;
+    /*background-repeat: no-repeat;
+    background-position: center center;*/
+}
+
+#inicio .txt-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#inicio .txt-container .btn{
+    padding: 0 19px;
+    margin: 20px 0px;
+}
+
+#inicio .txt-container .btn a:hover{
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+    width: auto;
+    color: black;
+}
+
+#inicio .txt-container .btn a:hover{
+    box-shadow: 0px 5px 10px 0px rgba(230, 106, 255);
+}
+
+#inicio .txt-container .txt-intro{
+    padding: 0 19px;
+    width: 60%;
+}
+
+#inicio .txt-container .txt-intro p{
+    line-height: 2;
+}
+/*Fin estilos inicio*/
+
+/*Estilos who*/
+#who{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#who .contenido-who{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid rgba(230, 106, 255);
+    padding-bottom: 25px;
+}
+
+#who .contenido-who .img-who{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#who .contenido-who .img-who img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+#who .contenido-who .texto-who{
+    padding: 0px 19px;
+}
+
+#who .contenido-who .texto-who p{
+    line-height: 2;
+    text-align: justify;
+}
+/*Fin estilos who*/
+
+/* Estilos sección proyectos */
+#proyectos{
+
+    width: 100%;
+    margin: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#proyectos .contenedor-titulo{
+    margin-top: 20px;
+    margin-bottom: 65px;
+}
+
+#proyectos .contenedor-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#proyectos .contenedor-cards .cards{
+    cursor: pointer;
+    transition: 0.5s;
+    width: 200px;
+    height: 200px;
+    padding: 2em 1.5em;
+    border-bottom: 6px solid  rgba(230, 106, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgb(177, 116, 169)
+}
+
+.cards h4{
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgba(230, 106, 255);
+}
+
+.cards h3{
+    margin: 5px 0;
+}
+
+.cards p{
+    line-height: 1.8;
+}
+
+.cards:hover{
+    background-color: rgba(230, 106, 255);
+}
+
+.cards:hover h4{
+    color: #fff;
+}
+
+
+/*Estilos sección contáctame*/
+#contactame{
+    background-color: #c4bebe9d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 45px;
+    flex-direction: column;
+}
+
+#contactame .titulo-contacto{
+    margin-top: 45px;
+}
+
+#contactame .form-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+
+/*Ponerle estilos a input y textarea, se separa la ruta en comas*/
+#contactame form input, #contactame form textarea{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    margin: 15px;
+    width: 500px;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid rgba(230, 106, 255);
+    outline: none;   
+}
+
+#contactame form input::placeholder, #contactame form textarea::placeholder{
+    color: rgb(43, 9, 40);
+}
+
+#contactame form input[type="button"]{
+    width: 520px;
+    box-shadow: 0px 5px 10px 0px rgba(230, 106, 255);
+}
+/*Aquí terminan los estilos de contáctame*/
+
+
+/*Aquí inician los estilos del footer*/
+footer{
+    background-color:  rgb(55, 58, 59);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+footer .social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-media .social-media-box{
+    margin: 20px;
+}
+
+footer .social-media .social-media-box img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
